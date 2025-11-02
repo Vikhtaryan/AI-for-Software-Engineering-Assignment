@@ -77,14 +77,7 @@ Use Case: Suitable for all dataset sizes including very large and nearly sorted 
 Bubble Sort (Manual version)
 
 Time Complexity: 
-O
-(
-n
-2
-)
-O(n 
-2
- ) average and worst case
+O(n2)O(n 2) average and worst case
 
 Algorithm: Repeatedly swaps adjacent elements to sort the data
 
@@ -174,4 +167,60 @@ AI-enhanced testing tools integrated with Selenium IDE or platforms like Testim.
 
 Compared to manual testing, AI-powered automation scales testing efforts, accelerates feedback for developers, and increases reliability and accuracy. This leads to faster release cycles with higher confidence in software quality. Enterprises using AI-driven Selenium tools report up to 70% reduction in maintenance effort and enhanced defect detection rates, underpinning how AI fundamentally raises testing efficiency and scope beyond human capabilities
 
+Part 3: Ethical Reflection
+When an AI model predicting issue priority is deployed in a company, potential biases in the dataset can arise. For example, if certain teams or groups are underrepresented in the training data, the model may perform poorly or unfairly predict issue priorities for these groups. This can lead to biased or discriminatory outcomes, harming trust and fairness in the system.
+
+Biases may occur due to:
+
+Imbalanced representation of teams or demographics
+
+Proxy variables correlating with sensitive attributes
+
+Missing or noisy data disproportionately affecting some groups
+
+To address these biases, fairness toolkits like IBM AI Fairness 360 (AIF360) can be employed. AIF360 provides a suite of algorithms and metrics to detect, explain, and mitigate bias at various stages:
+
+Detection: It uses fairness metrics such as demographic parity, equalized odds, and disparate impact to identify bias in model predictions across subgroups.
+
+Explanation: Through explainability techniques, it reveals which features contribute to biased decisions.
+
+Mitigation: Offers pre-processing (rebalancing data), in-processing (fairness-aware learning), and post-processing (adjusting outputs) algorithms to reduce bias without sacrificing model accuracy.
+
+By integrating tools like AIF360 in the deployment pipeline, organizations can continuously monitor and improve model fairness, ensuring equitable treatment of all teams and user groups. This systematic approach reduces discrimination risk and enhances trust in AI systems used for critical decisions like issue prioritization.
+
+
+Bonus Task
+
+AI-Powered Automated Software Documentation Generator
+
+Purpose:
+The purpose of this AI tool is to automate the generation and continuous maintenance of comprehensive software documentation, including code-level comments, API references, user manuals, and system architecture descriptions. This addresses the common challenge of outdated, incomplete, or inconsistent documentation that impedes software maintainability, knowledge transfer, and onboarding.
+
+Workflow:
+
+1)Codebase Ingestion: The tool scans the entire codebase including source code, comments, commit history, and related documents.
+
+2)Deep Semantic Analysis: Using advanced language models, it understands code context, business logic, and dependencies across modules and legacy components.
+
+3)Knowledge Integration: It integrates insights from auxiliary sources such as issue trackers, test cases, and wikis to enrich documentation.
+
+4)Automated Generation: Generates structured documentation with customizable templates for API references, user guides, and compliance docs. It produces natural language descriptions, diagrams, and example usage snippets.
+
+5)Continuous Synchronization: Monitors code changes and automatically updates the documentation to reflect the current state, preventing staleness.
+
+6)Search and Assist: Provides a conversational AI interface allowing developers to query documentation and get instant answers or code explanations.
+
+Impact:
+
+1)Enhanced Developer Productivity: Reduces time spent on writing and updating docs, enabling focus on core development.
+
+2)Improved Knowledge Sharing: Ensures all stakeholders have access to accurate and current information.
+
+3)Reduced Onboarding Time: New team members ramp up faster with clear, coherent documentation.
+
+4)Higher Software Quality: Clear documentation facilitates better testing, debugging, and compliance adherence.
+
+Legacy Code Modernization: Helps understand and document older systems where original documentation is lacking.
+
+This AI documentation generator blends state-of-the-art NLP with software engineering workflows, transforming both code maintenance and team collaboration in software projects.
 
